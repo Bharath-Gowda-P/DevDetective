@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dev Detective</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1 class="title">DevDetective</h1>
+        <div class="btn-mode">
+          <p id="mode-text">DARK</p>
+          <div class="icon-container">
+            <img src="./assets/images/moon-icon.svg" alt="" id="mode-icon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="app">
+          <div class="search-container">
+            <input
+              type="search"
+              id="search"
+              placeholder="Enter a GitHub Username"
+              required
+            />
+            <div class="error">
+              <p class="no-results">No search results.</p>
+            </div>
+            <button class="btn-search" type="submit">Search</button>
+          </div>
+
+          <div class="profile-container">
+            <div class="profile-content">
+              <div class="profile-header">
+                <img src="" alt="" id="avatar" />
+                <div class="profile-info-wrapper">
+                    <div class="name-container">
+                    <h2 class="profile-name">Bharath Gowda</h2>
+                    <a href="#" class="profile-name-link" id="user"
+                      >@bharathgowda</a
+                    >
+                  </div>
+                  <p class="date">Joined 05 May 2020</p>
+              </div>
+            </div>
+
+              <p class="bio">
+                full stack developer. python, js and legendary c++ 🙇‍♂️
+              </p>
+
+              <div class="profile-stats-wrapper">
+                <div class="profile-stat">
+                  <p class="stat-title">Repos</p>
+                  <p class="stat-value" id="repos">71</p>
+                </div>
+                <div class="profile-stat">
+                  <p class="stat-title">Followers</p>
+                  <p class="stat-value" id="followers">505</p>
+                </div>
+                <div class="profile-stat">
+                  <p class="stat-title">Following</p>
+                  <p class="stat-value" id="following">139</p>
+                </div>
+              </div>
+
+              <div class="profile-bottom-wrapper">
+                <div class="bottom-info">
+                  <div class="botton-icons">
+                    <img src="./assets/images/location-icon.svg" alt="" />
+                  </div>
+                  <p class="location">Bengaluru</p>
+                </div>
+                <div class="bottom-info">
+                  <div class="botton-icons">
+                    <img src="./assets/images/website-icon.svg" alt="" />
+                  </div>
+                  <a href="#" id="page">bharathgowda.co.in</a>
+                </div>
+                <div class="bottom-info">
+                  <div class="botton-icons">
+                    <img src="./assets/images/twitter-icon.svg" alt="" />
+                  </div>
+                  <a href="#" class="twitter">bharathgowda</a>
+                </div>
+                <div class="bottom-info">
+                  <div class="botton-icons">
+                    <img src="./assets/images/company-icon.svg" alt="" />
+                  </div>
+                  <p class="company">Atlassian</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
